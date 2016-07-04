@@ -24,7 +24,7 @@ class MapyCore(object):
         partitioned_data = collections.defaultdict(list)
         for key, value in mapped_values:
             partitioned_data[key].append(value)
-            return partitioned_data.items()
+        return partitioned_data.items()
 
     # process inputs with map and reduce functions. accepts inputs as an
     # iterable container and the size of a chunk to be given to
